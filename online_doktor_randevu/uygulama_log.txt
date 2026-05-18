@@ -1,0 +1,21 @@
+---
+Calistirma basladi.
+app yuklendi, run()...
+GENEL HATA (detay asagida)
+Traceback (most recent call last):
+  File "c:\Users\Acer Nitro 5\OneDrive\Рабочий стол\online_doktor_randevu\main.py", line 24, in <module>
+    run()
+    ~~~^^
+  File "C:\Users\Acer Nitro 5\OneDrive\Рабочий стол\online_doktor_randevu\app.py", line 1520, in run
+    app.setWindowIcon(_app_icon())
+                      ~~~~~~~~~^^
+  File "C:\Users\Acer Nitro 5\OneDrive\Рабочий стол\online_doktor_randevu\app.py", line 56, in _app_icon
+    p.setPen(QPen(QColor("#ffffff"), 5, Qt.PenCapStyle.RoundCap, Qt.PenJoinStyle.RoundJoin))
+             ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: arguments did not match any overloaded call:
+  QPen(): too many arguments
+  QPen(a0: Qt.PenStyle): argument 1 has unexpected type 'QColor'
+  QPen(brush: QBrush|QColor|Qt.GlobalColor|int|QGradient, width: float, style: Qt.PenStyle = Qt.SolidLine, cap: Qt.PenCapStyle = Qt.SquareCap, join: Qt.PenJoinStyle = Qt.BevelJoin): argument 3 has unexpected type 'PenCapStyle'
+  QPen(pen: QPen|QColor|Qt.GlobalColor|int): too many arguments
+  QPen(variant: Any): too many arguments
+
